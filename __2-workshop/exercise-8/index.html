@@ -1,1 +1,49 @@
 <!-- ...crickets... -->
+<!DOCTYPE html>
+<html>
+    <body>
+        <h1>Registration Form</h1>
+
+        <form>
+            <label>Username</label>
+            <input type="text" name="username">
+            <label>Password</label>
+            <input type="password" name="password">
+            <label>Email</label>
+            <input type="email" name="email">
+        </form>
+
+        <h2>Which taxi do you require ?</h2>
+        <form>
+            <input type="radio" name="taxi_type" value="car"><label>Car</label>
+            <input type="radio" name="taxi_type" value="van"><label>Van</label>
+            <input type="radio" name="taxi_type" value="Tuk_Tuk"><label>Tuk Tuk</label>
+        </form>
+
+        <h2>Choose your extras</h2>
+        <form>
+            <input type="checkbox" name="extras" value="Baby_seat"> Baby seat
+            <input type="checkbox" name="extras" value="Wheel_Chair_access"> Wheel Chair access
+            <input type="checkbox" name="extras" value="Privacy_Window"> Privacy Window
+        </form>
+
+        <h2>Where would you like us to pick you up?</h2>
+
+        <label for="location-select">Pickup Location</label>
+        <select name="location">
+            <option value="">Select One</option>
+            <option value="Outremont">Outremont</option>
+            <option value="Verdun">Verdun</option>
+            <option value="Lachine">Lachine</option>
+            <option value="Le_Plateau_Mont_Royal">Le Plateau-Mont-Royal</option>
+            <option value="Montréal_Nord">Montréal-Nord</option>
+        </select>
+
+        <h2>Additional Instructions</h2>
+        <form>
+            <label for="additional_instructions">Special</label>
+            <textarea name="special_instructions">provide special instructions here</textarea>
+            <input type="submit">
+        </form>
+    </body>
+</html>
